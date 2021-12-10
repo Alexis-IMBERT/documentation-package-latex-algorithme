@@ -92,7 +92,7 @@ Voici l'historique des changements du package depuis sa sortie :
     
   \item Modification depuis la version 2.3.6 :
     \textbullet Ajout des commandes \textbackslash fonctionAvecPreconditions \textbackslash signatureFonctionAvecPreconditions, \textbackslash procedureAvecPreconditions et \textbackslash signatureProcedureAvecPreconditions
-    \textbullet remplacement de structure et champStructure par enregistrement et champEnregistrement
+    \textbullet remplacement de structure et champEnregistrement par enregistrement et champEnregistrement
 
   \item  Modification depuis la version 2.3.5 :
 
@@ -106,7 +106,7 @@ Voici l'historique des changements du package depuis sa sortie :
   \item  Modification depuis la version 2.3.2 : 
 
    \textbullet   structure est maintenant un environnement qui s'integre dans l'environnement algorithme
-    \textbackslash champStructure a pris une majuscule  
+    \textbackslash champEnregistrement a pris une majuscule  
     
    \textbullet   Apparition de \texttt{\textbackslash tadSemantiquesAxiomatiques}
 
@@ -794,10 +794,10 @@ Exemple d'utilisation des pointeurs
 \end{algorithme}
 
 \begin{algorithme}
-\begin{structure}{noeud}
-  \champStructure{lElement}{Element}
-  \champStructure{listeSuivante}{listeChaînée}
-\end{structure}
+\begin{Enregistrement}{noeud}
+  \champEnregistrement{lElement}{Element}
+  \champEnregistrement{listeSuivante}{listeChaînée}
+\end{Enregistrement}
 \end{algorithme}
 
 \begin{algorithme}
@@ -820,10 +820,10 @@ Ce qui donne :
 \end{algorithme}
 
 \begin{algorithme}
-\begin{structure}{noeud}
-  \champStructure{lElement}{Element}
-  \champStructure{listeSuivante}{listeChaînée}
-\end{structure}
+\begin{Enregistrement}{noeud}
+  \champEnregistrement{lElement}{Element}
+  \champEnregistrement{listeSuivante}{listeChaînée}
+\end{Enregistrement}
 \end{algorithme}
 
 \begin{algorithme}
@@ -841,16 +841,16 @@ Ce qui donne :
 
 \end{algorithme}
 
-\section{L'environment structure}
+\section{L'environment Enregistrement}
 
 Les structures sont déclarées au sein même de l'environnement algorithme (entre les balises \textbackslash begin\{algorithme\} et \textbackslash end\{algorithme\}).
 
 La syntaxe est la suivante:
 \begin{lstlisting}
-\begin{structure}{1}
-        \champStructure{2}{3}
+\begin{Enregistrement}{1}
+        \champEnregistrement{2}{3}
   ...
-\end{structure}
+\end{Enregistrement}
 
 (1):Nom de la structure
 (2):Nom du premier champ de la structure
@@ -861,19 +861,19 @@ La syntaxe est la suivante:
 \begin{lstlisting}
 
 \begin{algorithme}
-\begin{structure}{date}
-        \champStructure{leJour}{\entier}
-        \champStructure{leMois}{\entier}
-       \champStructure{lAnnee}{\entier}
-\end{structure}
+\begin{Enregistrement}{date}
+        \champEnregistrement{leJour}{\entier}
+        \champEnregistrement{leMois}{\entier}
+       \champEnregistrement{lAnnee}{\entier}
+\end{Enregistrement}
 \end{algorithme}
 \end{lstlisting}
 \begin{algorithme}
-\begin{structure}{date}
-        \champStructure{leJour}{\entier}
-        \champStructure{leMois}{\entier}
-       \champStructure{lAnnee}{\entier}
-\end{structure}
+\begin{Enregistrement}{date}
+        \champEnregistrement{leJour}{\entier}
+        \champEnregistrement{leMois}{\entier}
+       \champEnregistrement{lAnnee}{\entier}
+\end{Enregistrement}
 \end{algorithme}
 
 
