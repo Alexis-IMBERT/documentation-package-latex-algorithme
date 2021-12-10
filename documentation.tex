@@ -70,6 +70,30 @@ Le langage utilisé est détaché de toute syntaxe spécifique aux langages de progr
 La version stable du package \textbf{algorithme} est actuellement la version 2.3.6.
 Voici l'historique des changements du package depuis sa sortie : 
 \begin{itemize}
+  \item Modifications depuis la version 2.3.7
+%% Envoyer toutes remarques a Nicolas.Delestre@insa-rouen.fr
+
+  \item Modifications de puis la version 2.6
+    \textbullet Amélioration de la notation des pointeurs
+
+  \item Modifications depuis la version 2.4
+    \textbullet Ajoute des commandes \textbackslash typeProcedure, \textbackslash typeFonction, \textbackslash typeProcedureAvecPreconditions, \textbackslash typeFonctionAvecPreconditions
+
+  \item Modifications depuis la version 2.3.8
+    \textbullet Ajout de la commande \textbackslash tadOperationAvecPreconditions
+    \textbullet Ajout des environnement tadPreconditions et des commandes \textbackslash motclefTADPreconditions  et \textbackslash tadPrecondition
+    \textbullet Ajout de la commande \textbackslash champ
+
+
+  \item Modifications depuis la version 2.3.7
+    \textbullet Ajout des types de base naturelNonNul, reelPositif, reelPositifNonNul (resp Negatif)
+    \textbullet Elimination d'accents dans les mots cles lies à l'algorithmique
+    \textbullet ajout de la commande \textbackslash commentaire
+    
+  \item Modification depuis la version 2.3.6 :
+    \textbullet Ajout des commandes \textbackslash fonctionAvecPreconditions \textbackslash signatureFonctionAvecPreconditions, \textbackslash procedureAvecPreconditions et \textbackslash signatureProcedureAvecPreconditions
+    \textbullet remplacement de structure et champStructure par enregistrement et champEnregistrement
+
   \item  Modification depuis la version 2.3.5 :
 
    \textbullet   suppression de la commande \textbackslash programme
@@ -825,7 +849,7 @@ La syntaxe est la suivante:
 \begin{lstlisting}
 \begin{structure}{1}
         \champStructure{2}{3}
-	...
+  ...
 \end{structure}
 
 (1):Nom de la structure
@@ -840,7 +864,7 @@ La syntaxe est la suivante:
 \begin{structure}{date}
         \champStructure{leJour}{\entier}
         \champStructure{leMois}{\entier}
-     	\champStructure{lAnnee}{\entier}
+       \champStructure{lAnnee}{\entier}
 \end{structure}
 \end{algorithme}
 \end{lstlisting}
@@ -848,7 +872,7 @@ La syntaxe est la suivante:
 \begin{structure}{date}
         \champStructure{leJour}{\entier}
         \champStructure{leMois}{\entier}
-     	\champStructure{lAnnee}{\entier}
+       \champStructure{lAnnee}{\entier}
 \end{structure}
 \end{algorithme}
 
