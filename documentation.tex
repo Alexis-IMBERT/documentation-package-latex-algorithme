@@ -575,6 +575,7 @@ Exemple:
 \subsection{Les fonctions et les procédures}
 
 \subsubsection{Les fonctions}
+\paragraph{Sans précondition(s)}
 Pour insérer une fonction, il faut utiliser la commande \texttt{\textbackslash fonction}  qui prend en paramètre cinq arguments :
 \begin{lstlisting}
 \fonction {1}{2}{3}{4}{5}
@@ -620,8 +621,58 @@ Exemple d'utilisation de la commande \texttt{\textbackslash fonction}
     }    
   \end{algorithme}
 
+\paragraph{Avec Préconditions}
+Pour insérer une fonction avec précondition(s), il faut utiliser la commande \texttt{\textbackslash fonctionAvecPreconditions}  qui prend en paramètre six arguments :
+\begin{lstlisting}
+\fonction {1}{2}{3}{4}{5}{6}
+ (1) Le nom de la fonction 
+ (2) Les paramètres 
+ (3) Le type de retour
+ (4) Les préconditions
+ (5) Les variables locales
+ (6) Les instructions
+\end{lstlisting}
+
+Dans la liste des instructions, il doit y avoir au moins une fois
+l'appel à la commande \texttt{\textbackslash retourner} qui admet un
+argument en paramètre.
+
+Exemple d'utilisation de la commande \texttt{\textbackslash fonctionAvecPreconditions}
+
+\begin{lstlisting}
+\begin{algorithme}
+  \small
+  \fonctionAvecPreconditions
+  {abs}
+  {unEntier : \entier}
+  {\entier}
+  {}
+  {}
+  {\sialorssinon{unEntier $\geq$ 0}
+    {\retourner{unEntier}}
+    {\retourner{-unEntier}}
+  }    
+\end{algorithme}
+\end{lstlisting}
+
+
+\begin{algorithme}
+    \small
+    \fonctionAvecPreconditions
+    {abs}
+    {unEntier : \entier}
+    {\entier}
+    {estRéel(UnEntier)}
+    {}
+    {\sialorssinon{unEntier $\geq$ 0}
+      {\retourner{unEntier}}
+      {\retourner{-unEntier}}
+    }    
+  \end{algorithme}
+
+
 \subsubsection{Signature de fonction}
-\paragraph{Sans Préconditions}
+\paragraph{Sans Précondition(s)}
 Pour insérer une signature de fonction, il faut utiliser la commande
 \texttt{\textbackslash signaturefonction} qui prend en paramètre trois
 arguments identiques aux trois premiers paramètres de la commande \texttt{\textbackslash fonction}
