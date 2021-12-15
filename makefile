@@ -1,4 +1,4 @@
-all : documentation.pdf documentation.tex
+all : clean documentation.pdf documentation.tex
 
 documentation.pdf : documentation.tex
 	pdflatex documentation.tex
