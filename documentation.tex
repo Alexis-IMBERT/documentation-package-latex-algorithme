@@ -54,14 +54,14 @@ frameround=fttt;%
 \tableofcontents{}
 
 
-\chapter{Prï¿½sentation du package}
+\chapter{Présentation du package}
 
-\section{Gï¿½nï¿½ralitï¿½s}
+\section{Généralités}
 
-Ce package est destinï¿½ ï¿½ afficher des algorithmes dans les documents \LaTeX.
-La prï¿½sentation et la syntaxe ont ï¿½tï¿½ crï¿½ï¿½ de maniï¿½re ï¿½ ce que les algorithmes soient comprï¿½hensibles par tous. 
-Le surlignage en gras des termes important ainsi que l'indentation est faite automatiquement. Par ailleurs, tout les ï¿½lements algorithmiques sont en franï¿½ais.
-Le langage utilisï¿½ est dï¿½tachï¿½ de toute syntaxe spï¿½cifique aux langages de programmation existants. Ceci permet de porter aisï¿½ment l'algorithme dans n'importe lequel de ces langages.
+Ce package est destiné à afficher des algorithmes dans les documents \LaTeX.
+La présentation et la syntaxe ont été créé de manière à ce que les algorithmes soient compréhensibles par tous. 
+Le surlignage en gras des termes important ainsi que l'indentation est faite automatiquement. Par ailleurs, tout les élements algorithmiques sont en français.
+Le langage utilisé est détaché de toute syntaxe spécifique aux langages de programmation existants. Ceci permet de porter aisément l'algorithme dans n'importe lequel de ces langages.
 
 
 
@@ -73,7 +73,7 @@ Voici l'historique des changements du package depuis sa sortie :
 %% Envoyer toutes remarques a Nicolas.Delestre@insa-rouen.fr
 
   \item Modifications de puis la version 2.6\\
-    \textbullet   Amï¿½lioration de la notation des pointeurs
+    \textbullet   Amélioration de la notation des pointeurs
 
   \item Modifications depuis la version 2.4\\
     \textbullet   Ajoute des commandes \textbackslash typeProcedure, \textbackslash typeFonction, \textbackslash typeProcedureAvecPreconditions, \textbackslash typeFonctionAvecPreconditions
@@ -86,7 +86,7 @@ Voici l'historique des changements du package depuis sa sortie :
 
   \item Modifications depuis la version 2.3.7\\
     \textbullet   Ajout des types de base naturelNonNul, reelPositif, reelPositifNonNul (resp Negatif)\\
-    \textbullet   Elimination d'accents dans les mots cles lies ï¿½ l'algorithmique\\
+    \textbullet   Elimination d'accents dans les mots cles lies à l'algorithmique\\
     \textbullet   ajout de la commande \textbackslash commentaire
     
   \item Modification depuis la version 2.3.6 :\\
@@ -106,29 +106,29 @@ Voici l'historique des changements du package depuis sa sortie :
    \textbullet Apparition de \texttt{\textbackslash tadSemantiquesAxiomatiques}\\
    \textbullet   Apparition de l'environnement \texttt{\textbackslash tadAxiomes} et commande \texttt{\textbackslash tadAxiome}\\
    \textbullet   Apparition de \texttt{\textbackslash typePointeur}, \texttt{\textbackslash pointeur},\texttt{\textbackslash \pointeurNULL}, \texttt{\textbackslash champPointeur}, \texttt{\textbackslash allouer}, \texttt{\textbackslash desallouer}\\
-   \textbullet   Elimination de l'erreur de compilation liï¿½ ï¿½ la dï¿½finition de la commande \texttt{\textbackslash structure}
+   \textbullet   Elimination de l'erreur de compilation lié à la définition de la commande \texttt{\textbackslash structure}
 \end{itemize}
 
 \section{Installation}
 
-Il y trois maniï¿½res d'installer le Package \textbf{algorithme.sty} : 
+Il y trois manières d'installer le Package \textbf{algorithme.sty} : 
 \begin{enumerate}
-  \item Il suffit de mettre le package dans le mï¿½me dossier que le document lui-mï¿½me.
-L' inconvï¿½nient de cette mï¿½thode est qu'il faut toujours recopier le package \textbf{algorithme.sty} ï¿½ chaque fois que l'on fait un nouveau document dans un autre dossier.
+  \item Il suffit de mettre le package dans le même dossier que le document lui-même.
+L' inconvénient de cette méthode est qu'il faut toujours recopier le package \textbf{algorithme.sty} à chaque fois que l'on fait un nouveau document dans un autre dossier.
 
- \item La deuxiï¿½me mï¿½thode consiste ï¿½ chercher le dossier \textbf{texmf} dans le system, puis de copier le package \textbf{algorithme.sty} dans le dossier \textbf{tex} ( Normalement, ce dossier devrait se trouver dans \texttt{/usr/share/texmf/tex/} ) .Mais cette mï¿½thode reste dangereuse par le fait qu'il faut ï¿½tre root pour le faire. 
+ \item La deuxième méthode consiste à chercher le dossier \textbf{texmf} dans le system, puis de copier le package \textbf{algorithme.sty} dans le dossier \textbf{tex} ( Normalement, ce dossier devrait se trouver dans \texttt{/usr/share/texmf/tex/} ) .Mais cette méthode reste dangereuse par le fait qu'il faut être root pour le faire. 
 
- \item La derniï¿½re mï¿½thode, qui est la mï¿½thode plus propre,  permet d'installer une fois pour toute le package sur la machine peut importe l'emplacement des documents sources \LaTeX.Il suffit de paramï¿½trer le variable d'environment \textbf{HOMETEXMF}, en lui donnant comme valeur le rï¿½peroire oï¿½ se trouve ses propres packages \LaTeX .
+ \item La dernière méthode, qui est la méthode plus propre,  permet d'installer une fois pour toute le package sur la machine peut importe l'emplacement des documents sources \LaTeX.Il suffit de paramétrer le variable d'environment \textbf{HOMETEXMF}, en lui donnant comme valeur le réperoire où se trouve ses propres packages \LaTeX .
 
 \end{enumerate}
 
 
 
 \chapter{Utilisation du package}
-Une fois installï¿½ (voir le paragraphe Installation), l'utilisation est semblable aux autres packages \LaTeX :
+Une fois installé (voir le paragraphe Installation), l'utilisation est semblable aux autres packages \LaTeX :
 
 
-En tï¿½te du fichier \LaTeX, inclure la ligne suivante
+En tête du fichier \LaTeX, inclure la ligne suivante
 \begin{lstlisting}
 \usepackage{algorithme}
 \end{lstlisting}
@@ -143,20 +143,20 @@ Entourer chaque algorithme par les balises suivantes:
 \end{lstlisting}
 
 
-\subsection{En-tï¿½te}
+\subsection{En-tête}
 
-Les differents en-tï¿½tes disponibles dans le package sont les suivants:
+Les differents en-têtes disponibles dans le package sont les suivants:
 
 
 \begin{lstlisting}
 \algorithme{1}{2}{3}{4}{5}{6}{7}{8}
 (1):Taille de la police
 (2):Nom de l'algorithme
-(3):Rï¿½le de l'algorithme 
-(4):Paramï¿½tres en entrï¿½e
-(5):Paramï¿½tres en sortie
-(6):Paramï¿½tres en entrï¿½e/sortie
-(7):Dï¿½claration variables locales
+(3):Rôle de l'algorithme 
+(4):Paramètres en entrée
+(5):Paramètres en sortie
+(6):Paramètres en entrée/sortie
+(7):Déclaration variables locales
 (8):Corps de l'algorithme
 \end{lstlisting}
 
@@ -165,7 +165,7 @@ Exemple:
 \begin{lstlisting}
 \algo{\normalsize}
 {exemple d'algo}
-{prï¿½senter l'utilisation d'algo}
+{présenter l'utilisation d'algo}
 {n : \entier}
 {m: \entier}
 {t: \entier}
@@ -176,7 +176,7 @@ Exemple:
 \begin{algorithme}
   \algo{\normalsize}
   {exemple d'algo}
-  {prï¿½senter l'utilisation d'algo}
+  {présenter l'utilisation d'algo}
   {n : \entier}
   {m: \entier}
   {t: \entier}
@@ -194,10 +194,10 @@ Les commandes pour utiliser les types simples sont les suivantes:
 \begin{lstlisting}
   Entier: \entier
   Entier naturel : \naturel
-  Rï¿½el: \reel
-  Boolï¿½en: \booleen
-  Caractï¿½re: \caractere
-  Chaine de caractï¿½res: \chaine
+  Réel: \reel
+  Booléen: \booleen
+  Caractère: \caractere
+  Chaine de caractères: \chaine
 \end{lstlisting}
 
 Exemple:
@@ -286,15 +286,15 @@ tableau bidimensionnel: \tableauDeuxDimensions {1}{2}{3}{4}
 
 
 
-\subsection{Les instructions ï¿½lï¿½mentaires}
-Les instructions ï¿½lï¿½mentaires sont l'affectation, la lecture et l'ï¿½criture de donnï¿½es, les commandes nï¿½cessaires pour les utiliser sont les suivantes:
+\subsection{Les instructions élémentaires}
+Les instructions élémentaires sont l'affectation, la lecture et l'écriture de données, les commandes nécessaires pour les utiliser sont les suivantes:
 \begin{lstlisting}
   affectation: \affecter{1}{2}
 (1): Nom de la variable
 (2): Valeur
 
- ï¿½criture: \ecrire{1}
-(1): Ce qui doit ï¿½tre afficher
+ écriture: \ecrire{1}
+(1): Ce qui doit être afficher
 
  lecture: \lire{1}
 (1): Variable
@@ -309,7 +309,7 @@ Exemple:
   {i: \entier}
   {
     \affecter{i}{0}
-    \ecrire{Veuillez donner une valeur ï¿½ ajouter ï¿½ a}
+    \ecrire{Veuillez donner une valeur à ajouter à a}
     \lire{i}
     \affecter{a}{a + i}
   }
@@ -323,7 +323,7 @@ Exemple:
   {i: \entier}
   {
     \affecter{i}{0}
-    \ecrire{Veuillez donner une valeur ï¿½ ajouter ï¿½ a}
+    \ecrire{Veuillez donner une valeur à ajouter à a}
     \lire{i}
     \affecter{a}{a + i}
   }
@@ -332,32 +332,32 @@ Exemple:
 \subsection {Les tests}
 
 \begin{itemize}
-   \item Supï¿½rieur ou ï¿½gal ( $\geq$ )
+   \item Supérieur ou égal ( $\geq$ )
        \begin{lstlisting}
           $\geq$
        \end{lstlisting}
 
-   \item Infï¿½rieur ou ï¿½gal ( $\leq$ )
+   \item Inférieur ou égal ( $\leq$ )
 
         \begin{lstlisting}
           $\leq$
         \end{lstlisting}
 
-   \item Diffï¿½rent de ( $\neq$ )
+   \item Différent de ( $\neq$ )
 
         \begin{lstlisting}
           $\neq$
         \end{lstlisting}
 
-   \item Egal ï¿½ ( = )
+   \item Egal à ( = )
         \begin{lstlisting}
           =
         \end{lstlisting}
-   \item Supï¿½rieur ( $>$ )
+   \item Supérieur ( $>$ )
         \begin{lstlisting}
           $>$
         \end{lstlisting}
-   \item Infï¿½rieur ( $<$ )
+   \item Inférieur ( $<$ )
 
         \begin{lstlisting}
           $<$
@@ -368,11 +368,11 @@ Exemple:
    \begin{lstlisting}
        \sialors{1}{2}
 (1): Test de la conditionnelle
-(2): Code ï¿½ exectuter si le test est vï¿½rifiï¿½
+(2): Code à exectuter si le test est vérifié
         \sialorssinon{1}{2}{3}
 (1): Test de la conditionnelle
-(2): Code ï¿½ executer si le test est vï¿½rifiï¿½
-(3): Code ï¿½ executer si le test n'est pas vï¿½rifiï¿½
+(2): Code à executer si le test est vérifié
+(3): Code à executer si le test n'est pas vérifié
    \end{lstlisting}
 
  Exemple:
@@ -391,10 +391,10 @@ Exemple:
           \lire {n}
           \sialorssinon{n $\geq$ 0}
              {
-               \ecrire{Vous avez entrï¿½ un entier positif ou nul}
+               \ecrire{Vous avez entré un entier positif ou nul}
              }
              {
-               \ecrire{Vous avez entrï¿½ un entier nï¿½gatif}
+               \ecrire{Vous avez entré un entier négatif}
              }
        }
    \end{algorithme}
@@ -413,24 +413,24 @@ Exemple:
           \lire {n}
           \sialorssinon{n $\geq$ 0}
              {
-               \ecrire{Vous avez entrï¿½ un entier positif ou nul}
+               \ecrire{Vous avez entré un entier positif ou nul}
              }
              {
-               \ecrire{Vous avez entrï¿½ un entier nï¿½gatif}
+               \ecrire{Vous avez entré un entier négatif}
              }
        }
  \end{algorithme}
 
 
  \subsection{Les boucles}
- \subsubsection{detï¿½rministes}
+ \subsubsection{detérministes}
 
  \begin{lstlisting}
  \pour{1}{2}{3}{4}{5}
 (1):Nom de la variable
-(2):Borne infï¿½rieure
-(3):Borne Supï¿½rieure
-(4):Pas (si non renseignï¿½, 1)
+(2):Borne inférieure
+(3):Borne Supérieure
+(4):Pas (si non renseigné, 1)
 (5):Corps de la boucle
  \end{lstlisting}
 
@@ -439,7 +439,7 @@ Exemple:
  \begin{algorithme}
      \algo 
      {\small}
-     {Afficher les nombres de 1 ï¿½ 100}
+     {Afficher les nombres de 1 à 100}
      {}
      {n : \naturel}
      {}
@@ -458,7 +458,7 @@ Exemple:
  \begin{algorithme}
      \algo 
      {\small}
-     {Afficher les nombres de 1 ï¿½ 100}
+     {Afficher les nombres de 1 à 100}
      {}
      {n : \naturel}
      {}
@@ -472,7 +472,7 @@ Exemple:
      }
  \end{algorithme}
 
- \subsubsection{indetï¿½rministes}
+ \subsubsection{indetérministes}
    \begin{lstlisting}
      \tantque{1}{2}
 (1):Test de la boucle
@@ -484,14 +484,14 @@ Exemple:
   \begin{algorithme}
     \algo
     {\small}
-    {Afficher les nombres de 1 ï¿½ ?}
+    {Afficher les nombres de 1 à ?}
     {}
     {n : \naturel}
     {bornesup : \naturel}
     {}
     {}
     {
-      \ecrire{Afficher les nombres de 1 ï¿½ ?}
+      \ecrire{Afficher les nombres de 1 à ?}
       \lire {bornesup}
       \tantque{n$<$bornesup+1}
          {
@@ -505,7 +505,7 @@ Exemple:
   \begin{algorithme}
     \algo
     {\small}
-    {Afficher les nombres de 1 ï¿½ }
+    {Afficher les nombres de 1 à }
     {}
     {n : \naturel}
     {bornesup : \naturel}
@@ -513,7 +513,7 @@ Exemple:
     {}
     {
       \affecter {n}{1}
-      \ecrire{Afficher les nombres de 1 ï¿½ ?}
+      \ecrire{Afficher les nombres de 1 à ?}
       \lire {bornesup}
       \tantque{n $<$ bornesup+1}
          {
@@ -525,7 +525,7 @@ Exemple:
 
 
 
-La commande \texttt{\textbackslash repeter} permet d'effectuer une boucle en exï¿½cutant au moins une fois le corps de boucle.
+La commande \texttt{\textbackslash repeter} permet d'effectuer une boucle en exécutant au moins une fois le corps de boucle.
 
   \begin{lstlisting}
     \repeter{1}{2}
@@ -572,23 +572,23 @@ Exemple:
    }
  \end{algorithme}
 
-\subsection{Les fonctions et les procï¿½dures}
+\subsection{Les fonctions et les procédures}
 
 \subsubsection{Les fonctions}
-\paragraph{Sans prï¿½condition(s)}
-Pour insï¿½rer une fonction, il faut utiliser la commande \texttt{\textbackslash fonction}  qui prend en paramï¿½tre cinq arguments :
+\paragraph{Sans précondition(s)}
+Pour insérer une fonction, il faut utiliser la commande \texttt{\textbackslash fonction}  qui prend en paramètre cinq arguments :
 \begin{lstlisting}
 \fonction {1}{2}{3}{4}{5}
  (1) Le nom de la fonction 
- (2) Les paramï¿½tres 
+ (2) Les paramètres 
  (3) Le type de retour
  (4) Les variables locales
  (5) Les instructions
 \end{lstlisting}
 
 Dans la liste des instructions, il doit y avoir au moins une fois
-l'appel ï¿½ la commande \texttt{\textbackslash retourner} qui admet un
-argument en paramï¿½tre.
+l'appel à la commande \texttt{\textbackslash retourner} qui admet un
+argument en paramètre.
 
 Exemple d'utilisation de la commande \texttt{\textbackslash fonction}
 
@@ -621,21 +621,21 @@ Exemple d'utilisation de la commande \texttt{\textbackslash fonction}
     }    
   \end{algorithme}
 
-\paragraph{Avec Prï¿½conditions}
-Pour insï¿½rer une fonction avec prï¿½condition(s), il faut utiliser la commande \texttt{\textbackslash fonctionAvecPreconditions}  qui prend en paramï¿½tre six arguments :
+\paragraph{Avec Préconditions}
+Pour insérer une fonction avec précondition(s), il faut utiliser la commande \texttt{\textbackslash fonctionAvecPreconditions}  qui prend en paramètre six arguments :
 \begin{lstlisting}
 \fonction {1}{2}{3}{4}{5}{6}
  (1) Le nom de la fonction 
- (2) Les paramï¿½tres 
+ (2) Les paramètres 
  (3) Le type de retour
- (4) Les prï¿½conditions
+ (4) Les préconditions
  (5) Les variables locales
  (6) Les instructions
 \end{lstlisting}
 
 Dans la liste des instructions, il doit y avoir au moins une fois
-l'appel ï¿½ la commande \texttt{\textbackslash retourner} qui admet un
-argument en paramï¿½tre.
+l'appel à la commande \texttt{\textbackslash retourner} qui admet un
+argument en paramètre.
 
 Exemple d'utilisation de la commande \texttt{\textbackslash fonctionAvecPreconditions}
 
@@ -662,7 +662,7 @@ Exemple d'utilisation de la commande \texttt{\textbackslash fonctionAvecPrecondi
     {abs}
     {unEntier : \entier}
     {\entier}
-    {estRï¿½el(UnEntier)}
+    {estRéel(UnEntier)}
     {}
     {\sialorssinon{unEntier $\geq$ 0}
       {\retourner{unEntier}}
@@ -672,42 +672,42 @@ Exemple d'utilisation de la commande \texttt{\textbackslash fonctionAvecPrecondi
 
 
 \subsubsection{Signature de fonction}
-\paragraph{Sans Prï¿½condition(s)}
-Pour insï¿½rer une signature de fonction, il faut utiliser la commande
-\texttt{\textbackslash signaturefonction} qui prend en paramï¿½tre trois
-arguments identiques aux trois premiers paramï¿½tres de la commande \texttt{\textbackslash fonction}
+\paragraph{Sans Précondition(s)}
+Pour insérer une signature de fonction, il faut utiliser la commande
+\texttt{\textbackslash signaturefonction} qui prend en paramètre trois
+arguments identiques aux trois premiers paramètres de la commande \texttt{\textbackslash fonction}
 \begin{lstlisting}
 \signaturefonction {1}{2}{3}
  (1) Le nom de la fonction 
- (2) Les paramï¿½tres 
+ (2) Les paramètres 
  (3) Le type de retour
  \end{lstlisting}
 
-\paragraph{Avec Prï¿½condtitions}
-\texttt{\textbackslash signatureFonctionAvecPreconditions} qui prend en paramï¿½tre quatre
-arguments identiques aux quatre premiers paramï¿½tres de la commande \\
+\paragraph{Avec Précondtitions}
+\texttt{\textbackslash signatureFonctionAvecPreconditions} qui prend en paramètre quatre
+arguments identiques aux quatre premiers paramètres de la commande \\
 \texttt{\textbackslash fonctionAvecPreconditions}
 \begin{lstlisting}
 \signatureFonctionAvecPreconditions {1}{2}{3}{4}
  (1) Le nom de la fonction 
- (2) Les paramï¿½tres 
+ (2) Les paramètres 
  (3) Le type de retour
- (4) Les prï¿½conditions
+ (4) Les préconditions
  \end{lstlisting}
  
  
-\subsubsection{Les procï¿½dures}
-\paragraph{Sans PrÃ©condition}
-Pour insï¿½rer une procï¿½dure, il faut utiliser la commande\texttt{\textbackslash procedure} qui prend en paramï¿½tre quatre arguments:
+\subsubsection{Les procédures}
+
+Pour insérer une procédure, il faut utiliser la commande\texttt{\textbackslash procedure} qui prend en paramètre quatre arguments:
 \begin{lstlisting}
 \procedure {1}{2}{3}{4} 
- (1) nom de la procï¿½dure
- (2) Les paramï¿½tres
+ (1) nom de la procédure
+ (2) Les paramètres
  (3) Les variables locales
  (4) Les instructions
 \end{lstlisting}
 
-Pour indiquer le passage de paramï¿½tre, on peut utiliser les commandes
+Pour indiquer le passage de paramètre, on peut utiliser les commandes
 \texttt{\textbackslash paramEntree}, \texttt{\textbackslash
   paramSortie} et \texttt{\textbackslash paramEntreeSortie}. Ces trois
 commandes prennent un seul argument.
@@ -738,32 +738,17 @@ Exemple d'utilisation de la commande \texttt{\textbackslash procedure}
     }
   \end{algorithme}
 
-\paragraph{Avec PrÃ©condition}
-Pour insï¿½rer une procï¿½dure avec prÃ©condition, il faut utiliser la commande\texttt{\textbackslash procedurfonctionAvecPreconditionse} qui prend en paramï¿½tre cinq arguments:
-\begin{lstlisting}
-\fonctionAvecPreconditions {1}{2}{3}{4}{5}
- (1) nom de la procï¿½dure
- (2) Les paramï¿½tres
- (3) Les prÃ©conditions
- (4) Les variables locales
- (5) Les instructions
-\end{lstlisting}
+\subsubsection{Signature de procédure}
 
-Pour indiquer le passage de paramï¿½tre, on peut utiliser les commandes
-\texttt{\textbackslash paramEntree}, \texttt{\textbackslash
-  paramSortie} et \texttt{\textbacksla
-
-\subsubsection{Signature de procï¿½dure}
-\paragraph{Sans PrÃ©conditions}
-Tout comme pour les fonctions, on a la possibilitï¿½ d'ï¿½crire une
-signature de procï¿½dure ï¿½ l'aide de la commande \texttt{\textbackslash
-  signatureprocedure} qui prend en paramï¿½tre deux arguments identiques
+Tout comme pour les fonctions, on a la possibilité d'écrire une
+signature de procédure à l'aide de la commande \texttt{\textbackslash
+  signatureprocedure} qui prend en paramètre deux arguments identiques
 aux deux premiers arguments de la commande \texttt{\textbackslash  procedure}
 
 \begin{lstlisting}
 \procedure {1}{2}
- (1) nom de la procï¿½dure
- (2) Les paramï¿½tres
+ (1) nom de la procédure
+ (2) Les paramètres
 \end{lstlisting}
   
 \begin{lstlisting}
@@ -819,46 +804,34 @@ Ce qui donne :
   }
 \end{algorithme}
 
-\paragraph{Avec PrÃ©conditions}
-Tout comme pour les fonctions, on a la possibilitï¿½ d'ï¿½crire une
-signature de procï¿½dure avec prÃ©conditions ï¿½ l'aide de la commande \texttt{\textbackslash
-  signatureProcedureAvecPreconditions} qui prend en paramï¿½tre trois arguments identiques
-aux trois premiers arguments de la commande \texttt{\textbackslash  procedure}
-
-\begin{lstlisting}
-\procedure {1}{2}
- (1) nom de la procï¿½dure
- (2) Les paramï¿½tres
- (3) Les prÃ©conditions
-\end{lstlisting}
 
  \subsection{Les pointeurs}
 \begin{itemize}
-\item Pour dï¿½finir le type de l'ï¿½lement pointï¿½ on utilise la commande \texttt{\textbackslash typePointeur} qui prend un seul argument en paramï¿½tre.
+\item Pour définir le type de l'élement pointé on utilise la commande \texttt{\textbackslash typePointeur} qui prend un seul argument en paramètre.
 \begin{lstlisting}
 \typePointeur {1}
- (1) le type de l'element pointï¿½
+ (1) le type de l'element pointé
 \end{lstlisting}
-\item Pour dï¿½clarer un pointeur on utilise la commande \texttt{\textbackslash pointeur} qui prend un seul argument en paramï¿½tre.
+\item Pour déclarer un pointeur on utilise la commande \texttt{\textbackslash pointeur} qui prend un seul argument en paramètre.
 \begin{lstlisting}
 \pointeur {1}
- (1) l'adresse de l'ï¿½lement pointï¿½
+ (1) l'adresse de l'élement pointé
 \end{lstlisting}
-\item Par dï¿½faut lorsqu'on dï¿½clare un pointeur, on ne sait pas sur quoi il pointe, on peut donc lui affecter ï¿½ l'initialisation la valeur NULL  en utilisant la commande \texttt{\textbackslash pointeurNULL}  qui prend aucun argument en paramï¿½tre.
+\item Par défaut lorsqu'on déclare un pointeur, on ne sait pas sur quoi il pointe, on peut donc lui affecter à l'initialisation la valeur NULL  en utilisant la commande \texttt{\textbackslash pointeurNULL}  qui prend aucun argument en paramètre.
 
-\item Pour dï¿½finir le type du pointeur on utilise la commande \texttt{\textbackslash champPointeur} qui prend deux arguments en paramï¿½tre:
+\item Pour définir le type du pointeur on utilise la commande \texttt{\textbackslash champPointeur} qui prend deux arguments en paramètre:
 \begin{lstlisting}
 \champPointeur {1}{2}
  (1) le pointeur 
- (1) l'ï¿½lement pointï¿½
+ (1) l'élement pointé
 \end{lstlisting}
-\item Pour allouer/dï¿½sallouer un espace mï¿½moire on utilise respectivement les commandes suivantes \texttt{\textbackslash allouer} et \texttt{\textbackslash desallouer} qui prennent en paramï¿½tre un seul argument
+\item Pour allouer/désallouer un espace mémoire on utilise respectivement les commandes suivantes \texttt{\textbackslash allouer} et \texttt{\textbackslash desallouer} qui prennent en paramètre un seul argument
 \begin{lstlisting}
 \allouer {1}
- (1) l'adresse allouï¿½e
+ (1) l'adresse allouée
 
 \desallouer {1}
- (1) l'adresse dï¿½sallouï¿½e
+ (1) l'adresse désallouée
 \end{lstlisting}
 \end{itemize}
 
@@ -874,15 +847,15 @@ Exemple d'utilisation des pointeurs
 \begin{algorithme}
 \begin{enregistrement}{noeud}
   \champEnregistrement{lElement}{Element}
-  \champEnregistrement{listeSuivante}{listeChaï¿½nï¿½e}
+  \champEnregistrement{listeSuivante}{listeChaînée}
 \end{enregistrement}
 \end{algorithme}
 
 \begin{algorithme}
 
 \procedure{ajouter}
-{\paramEntreeSortie{l:ListeChaï¿½nï¿½e} \paramEntree{e: Element}}
-{temp: ListeChaï¿½nï¿½e}
+{\paramEntreeSortie{l:ListeChaînée} \paramEntree{e: Element}}
+{temp: ListeChaînée}
 {
  \affecter{temp}{l}
 \affecter{l}{\allouer{noeud}}
@@ -900,15 +873,15 @@ Ce qui donne :
 \begin{algorithme}
 \begin{enregistrement}{noeud}
   \champEnregistrement{lElement}{Element}
-  \champEnregistrement{listeSuivante}{listeChaï¿½nï¿½e}
+  \champEnregistrement{listeSuivante}{listeChaînée}
 \end{enregistrement}
 \end{algorithme}
 
 \begin{algorithme}
 
 \procedure{ajouter}
-{\paramEntreeSortie{l:ListeChaï¿½nï¿½e} \paramEntree{e: Element}}
-{temp: ListeChaï¿½nï¿½e}
+{\paramEntreeSortie{l:ListeChaînée} \paramEntree{e: Element}}
+{temp: ListeChaînée}
 {
  \affecter{temp}{l}
 \affecter{l}{\allouer{noeud}}
@@ -921,7 +894,7 @@ Ce qui donne :
 
 \section{L'environment Enregistrement}
 
-Les structures sont dï¿½clarï¿½es au sein mï¿½me de l'environnement algorithme (entre les balises \textbackslash begin\{algorithme\} et \textbackslash end\{algorithme\}).
+Les structures sont déclarées au sein même de l'environnement algorithme (entre les balises \textbackslash begin\{algorithme\} et \textbackslash end\{algorithme\}).
 
 La syntaxe est la suivante:
 \begin{lstlisting}
@@ -959,8 +932,8 @@ La syntaxe est la suivante:
 \section{L'environment TAD}
 
 
-On a aussi la possibilitï¿½ de dï¿½finir des types abstraits de donnï¿½es
-(que l'on retrouve dans la littï¿½rature sous les termes ``types de donnï¿½es
+On a aussi la possibilité de définir des types abstraits de données
+(que l'on retrouve dans la littérature sous les termes ``types de données
 abstraits'' ou ``abstract datatype'').
 
 \begin{lstlisting}
@@ -972,7 +945,7 @@ abstraits'' ou ``abstract datatype'').
     \tadOperation{dictionnaire}{}{\tadUnParam{Dictionnaire}}
   \end{tadOperations}
   \begin{tadSemantiques}{Dictionnaire}
-    \tadSemantique{ajouter}{L'opï¿½ration qui permet d'ajouter un ï¿½lï¿½ment dans le Dictionnaire}
+    \tadSemantique{ajouter}{L'opération qui permet d'ajouter un élément dans le Dictionnaire}
   \end{tadSemantiques}
   \begin{tadAxiomes}
     \tadAxiome{dictionnaire()}
@@ -981,7 +954,7 @@ abstraits'' ou ``abstract datatype'').
 \end{lstlisting}
 
 
-Comme illustrï¿½ dans le Listing , on encadre la dï¿½finition d'un type abstrait de donnï¿½e par l'environnement \texttt{tad}.
+Comme illustré dans le Listing , on encadre la définition d'un type abstrait de donnée par l'environnement \texttt{tad}.
  On utilise ensuite les commandes et environnements suivants :
 \begin{itemize}
 \item
@@ -997,18 +970,18 @@ Comme illustrï¿½ dans le Listing , on encadre la dï¿½finition d'un type abstrait
    \begin{lstlisting}
      \tadParametres{1}
   \end{lstlisting}
-  La commande \texttt{\textbackslash tadParametres} qui permet de fixer le paramï¿½tre de ce TAD.
+  La commande \texttt{\textbackslash tadParametres} qui permet de fixer le paramètre de ce TAD.
 
 
- (1) : Listes des paramï¿½tres
+ (1) : Listes des paramètres
 \item 
   \begin{lstlisting}
     \tadDependances{1}
   \end{lstlisting}
-  La commande \texttt{\textbackslash tadDependances}  qui permet d'identifier  les types utilisï¿½s par le TAD.  
+  La commande \texttt{\textbackslash tadDependances}  qui permet d'identifier  les types utilisés par le TAD.  
 
 
- (1] : Listes des dï¿½pendances
+ (1] : Listes des dépendances
 
 \item 
   \begin{lstlisting}
@@ -1016,23 +989,23 @@ Comme illustrï¿½ dans le Listing , on encadre la dï¿½finition d'un type abstrait
               \tadOperation{2}{3}{4}
       \end{tadOperations}
   \end{lstlisting}
-  L'environnement \texttt{tadOperations} qui permet de lister, ï¿½ l'aide de la commande \texttt{\textbackslash tadOperation}, les opï¿½rations du TAD. 
- (1) : Nom de l'opï¿½ration qui a le plus de  caractï¿½res (permetant d'aligner toutes les autres opï¿½rations sur cette derniï¿½re).
- La commande \texttt{\textbackslash tadOperation} admet trois arguments en paramï¿½tre :
+  L'environnement \texttt{tadOperations} qui permet de lister, à l'aide de la commande \texttt{\textbackslash tadOperation}, les opérations du TAD. 
+ (1) : Nom de l'opération qui a le plus de  caractères (permetant d'aligner toutes les autres opérations sur cette dernière).
+ La commande \texttt{\textbackslash tadOperation} admet trois arguments en paramètre :
 
 
- (2) : Nom de l'opï¿½ration
+ (2) : Nom de l'opération
 
 
- (3) : Le produit cartï¿½sien des types en entrï¿½e : il faut alors utiliser une des commandes suivantes :
+ (3) : Le produit cartésien des types en entrée : il faut alors utiliser une des commandes suivantes :
       \begin{itemize}
-        \item \texttt{\textbackslash tadUnParam} qui admet un argument en paramï¿½tre
-       \item \texttt{\textbackslash tadDeuxParams} qui admet deux arguments en paramï¿½tre
-        \item \texttt{\textbackslash tadTroisParams} qui admet trois arguments en paramï¿½tre
-        \item etc. la limite ï¿½tant ï¿½  \texttt{\textbackslash tadHuitParams}
+        \item \texttt{\textbackslash tadUnParam} qui admet un argument en paramètre
+       \item \texttt{\textbackslash tadDeuxParams} qui admet deux arguments en paramètre
+        \item \texttt{\textbackslash tadTroisParams} qui admet trois arguments en paramètre
+        \item etc. la limite étant à  \texttt{\textbackslash tadHuitParams}
       \end{itemize}
 
- (4) : Le produit cartï¿½sien des types en sortie, qui s'utilise de la mï¿½me maniï¿½re que le produit cartï¿½sien des types en entrï¿½e
+ (4) : Le produit cartésien des types en sortie, qui s'utilise de la même manière que le produit cartésien des types en entrée
 
   \item
     \begin{lstlisting}
@@ -1040,13 +1013,13 @@ Comme illustrï¿½ dans le Listing , on encadre la dï¿½finition d'un type abstrait
            \tadSemantique{2}{3}
         \end{tadSemantiques}
     \end{lstlisting}
-   L'environnement \texttt{tadSemantiques} qui permet de lister, ï¿½ l'aide de la commande \texttt{\textbackslash tadSemantique}, la signification des opï¿½rations de ce TAD. 
+   L'environnement \texttt{tadSemantiques} qui permet de lister, à l'aide de la commande \texttt{\textbackslash tadSemantique}, la signification des opérations de ce TAD. 
 
 
- (1) : Nom de l'opï¿½ration qui a le  plus de caractï¿½res. 
+ (1) : Nom de l'opération qui a le  plus de caractères. 
 
 
- (2) : le nom de l'opï¿½ration
+ (2) : le nom de l'opération
 
 
  (3) : sa signification
@@ -1058,7 +1031,7 @@ Comme illustrï¿½ dans le Listing , on encadre la dï¿½finition d'un type abstrait
            \tadAxiome{1}
         \end{tadAxiomes}
     \end{lstlisting}
-   L'environnement \texttt{tadAxiomes} qui permet de lister, ï¿½ l'aide de la commande \texttt{\textbackslash tadAxiome}, les axiomes du TAD. 
+   L'environnement \texttt{tadAxiomes} qui permet de lister, à l'aide de la commande \texttt{\textbackslash tadAxiome}, les axiomes du TAD. 
 
  (1) : Axiome 
 
@@ -1079,10 +1052,10 @@ Voici un exemple assez complet qui illustre toutes ces commandes.
     \tadOperation{retirer}{\tadDeuxParams{Dictionnire}{Clef}}{\tadUnParam{Element}}
   \end{tadOperations}
   \begin{tadSemantiques}{Dictionnaire}
-    \tadSemantique{dictionnaire}{l'opï¿½ration qui permet de construire un Dictionnaire
-      ï¿½ partir de sa partie rï¿½elle et imaginaire}
-    \tadSemantique{ajouter}{L'opï¿½ration qui permet d'ajouter un ï¿½lï¿½ment dans le Dictionnaire}
-    \tadSemantique{retirer}{L'opï¿½ration qui permet de retirer un ï¿½lement du Dictionnaire}
+    \tadSemantique{dictionnaire}{l'opération qui permet de construire un Dictionnaire
+      à partir de sa partie réelle et imaginaire}
+    \tadSemantique{ajouter}{L'opération qui permet d'ajouter un élément dans le Dictionnaire}
+    \tadSemantique{retirer}{L'opération qui permet de retirer un élement du Dictionnaire}
   \end{tadSemantiques}
   \begin{tadAxiomes}
     \tadAxiome{dictionnaire()}
@@ -1105,10 +1078,10 @@ Ce qui donne :
     \tadOperation{retirer}{\tadDeuxParams{Dictionnire}{Clef}}{\tadUnParam{Element}}
   \end{tadOperations}
   \begin{tadSemantiques}{Dictionnaire}
-    \tadSemantique{dictionnaire}{l'opï¿½ration qui permet de construire un Dictionnaire
-      ï¿½ partir de sa partie rï¿½elle et imaginaire}
-    \tadSemantique{ajouter}{L'opï¿½ration qui permet d'ajouter un ï¿½lï¿½ment dans le Dictionnaire}
-    \tadSemantique{retirer}{L'opï¿½ration qui permet de retirer un ï¿½lement du Dictionnaire}
+    \tadSemantique{dictionnaire}{l'opération qui permet de construire un Dictionnaire
+      à partir de sa partie réelle et imaginaire}
+    \tadSemantique{ajouter}{L'opération qui permet d'ajouter un élément dans le Dictionnaire}
+    \tadSemantique{retirer}{L'opération qui permet de retirer un élement du Dictionnaire}
   \end{tadSemantiques}
   \begin{tadAxiomes}
     \tadAxiome{dictionnaire()}
@@ -1124,10 +1097,10 @@ Ce qui donne :
 \subsection{La commande renewcommand}
 
 
-Comment renommer les noms des instructions ï¿½ l'affichage des algorithmes ? \\
-C'est trï¿½s simple, il suffit d'utiliser la commande suivante:
+Comment renommer les noms des instructions à l'affichage des algorithmes ? \\
+C'est très simple, il suffit d'utiliser la commande suivante:
 \begin{lstlisting}
-\renewcommand{\motclef[Nom de la commande]}[0]{[Nouveau nom affichï¿½]}
+\renewcommand{\motclef[Nom de la commande]}[0]{[Nouveau nom affiché]}
 \end{lstlisting}
 
 Exemple:
@@ -1152,14 +1125,14 @@ donnent avant les renewcommand:
 \renewcommand{\motclefBooleen}[0]{Boolean}
 \renewcommand{\motclefReel}[0]{Real}
 
-et aprï¿½s les renewcommand: 
+et après les renewcommand: 
 
 \booleen   
 
 \reel
 
 \subsection{La commande remarque}
-La commande \texttt{\textbackslash remarque} sert ï¿½ mettre ( donc ) des remarques dans l'algorihme.
+La commande \texttt{\textbackslash remarque} sert à mettre ( donc ) des remarques dans l'algorihme.
 
 \begin{lstlisting}
 \begin{algorithme}
@@ -1171,7 +1144,7 @@ La commande \texttt{\textbackslash remarque} sert ï¿½ mettre ( donc ) des remarq
   {\affecter{temp}{val1}
     \affecter {val1}{val2}
     \affecter {val2}{temp}
-    \remarque{Une procï¿½dure ne renvoie pas de valeur }
+    \remarque{Une procédure ne renvoie pas de valeur }
   }
 \end{algorithme}
 \end{lstlisting}
@@ -1185,7 +1158,7 @@ Ce qui donne :
   {\affecter{temp}{val1}
     \affecter {val1}{val2}
     \affecter {val2}{temp}
-    \remarque{Une procï¿½dure ne renvoie pas de valeur}
+    \remarque{Une procédure ne renvoie pas de valeur}
 
   }
 \end{algorithme}
