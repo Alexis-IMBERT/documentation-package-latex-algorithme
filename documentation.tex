@@ -275,7 +275,7 @@ tableau bidimensionnel: \tableauDeuxDimensions {1}{2}{3}{4}
 
 \end{lstlisting}
 
- Exemples:
+Exemples:
 \begin{lstlisting}
 		\algo
 		{\normalsize}
@@ -358,52 +358,52 @@ Exemple:
 \subsection {Les tests}
 
 \begin{itemize}
-		 \item Supérieur ou égal ( $\geq$ )
-						 \begin{lstlisting}
-										$\geq$
-						 \end{lstlisting}
+	\item Supérieur ou égal ( $\geq$ )
+		\begin{lstlisting}
+			$\geq$
+		\end{lstlisting}
 
-		 \item Inférieur ou égal ( $\leq$ )
+		\item Inférieur ou égal ( $\leq$ )
+			\begin{lstlisting}
+				$\leq$
+			\end{lstlisting}
 
-								\begin{lstlisting}
-										$\leq$
-								\end{lstlisting}
+		\item Différent de ( $\neq$ )
 
-		 \item Différent de ( $\neq$ )
+		\begin{lstlisting}
+			$\neq$
+		\end{lstlisting}
 
-								\begin{lstlisting}
-										$\neq$
-								\end{lstlisting}
+		\item Egal à ( = )
+			\begin{lstlisting}
+				=
+			\end{lstlisting}
 
-		 \item Egal à ( = )
-								\begin{lstlisting}
-										=
-								\end{lstlisting}
-		 \item Supérieur ( $>$ )
-								\begin{lstlisting}
-										$>$
-								\end{lstlisting}
-		 \item Inférieur ( $<$ )
+		\item Supérieur ( $>$ )
+			\begin{lstlisting}
+				$>$
+			\end{lstlisting}
 
-								\begin{lstlisting}
-										$<$
-								\end{lstlisting}
+		\item Inférieur ( $<$ )
+			\begin{lstlisting}
+					$<$
+			\end{lstlisting}
 \end{itemize}
 
- \subsection {Les conditionnelles}
-		 \begin{lstlisting}
-						 \sialors{1}{2}
+\subsection {Les conditionnelles}
+		\begin{lstlisting}
+								\sialors{1}{2}
 (1): Test de la conditionnelle
 (2): Code à exectuter si le test est vérifié
 								\sialorssinon{1}{2}{3}
 (1): Test de la conditionnelle
 (2): Code à executer si le test est vérifié
 (3): Code à executer si le test n'est pas vérifié
-		 \end{lstlisting}
+		\end{lstlisting}
 
- Exemple:
+Exemple:
 
- \begin{lstlisting}
+\begin{lstlisting}
 				\begin{algorithme}
 				\algo 
 								{\small}
@@ -416,17 +416,17 @@ Exemple:
 								{
 										\lire {n}
 										\sialorssinon{n $\geq$ 0}
-												 {
-														 \ecrire{Vous avez entré un entier positif ou nul}
-												 }
-												 {
-														 \ecrire{Vous avez entré un entier négatif}
-												 }
-						 }
-		 \end{algorithme}
+												{
+														\ecrire{Vous avez entré un entier positif ou nul}
+												}
+												{
+														\ecrire{Vous avez entré un entier négatif}
+												}
+						}
+		\end{algorithme}
 \end{lstlisting}
 
- \begin{algorithme}
+\begin{algorithme}
 				\algo
 								{\small}
 								{Test du signe d'un entier}
@@ -438,72 +438,72 @@ Exemple:
 								{
 										\lire {n}
 										\sialorssinon{n $\geq$ 0}
-												 {
-														 \ecrire{Vous avez entré un entier positif ou nul}
-												 }
-												 {
-														 \ecrire{Vous avez entré un entier négatif}
-												 }
-						 }
- \end{algorithme}
+												{
+														\ecrire{Vous avez entré un entier positif ou nul}
+												}
+												{
+														\ecrire{Vous avez entré un entier négatif}
+												}
+						}
+\end{algorithme}
 
 
- \subsection{Les boucles}
- \subsubsection{detérministes}
+\subsection{Les boucles}
+\subsubsection{detérministes}
 
- \begin{lstlisting}
+\begin{lstlisting}
  \pour{1}{2}{3}{4}{5}
 (1):Nom de la variable
 (2):Borne inférieure
 (3):Borne Supérieure
 (4):Pas (si non renseigné, 1)
 (5):Corps de la boucle
- \end{lstlisting}
+\end{lstlisting}
 
 
- \begin{lstlisting}
- \begin{algorithme}
-				 \algo 
-				 {\small}
-				 {Afficher les nombres de 1 à 100}
-				 {}
-				 {n : \naturel}
-				 {}
-				 {}
-				 {}
-				 {
+\begin{lstlisting}
+\begin{algorithme}
+				\algo 
+				{\small}
+				{Afficher les nombres de 1 à 100}
+				{}
+				{n : \naturel}
+				{}
+				{}
+				{}
+				{
 								\pour{n}{1}{100}{}
-										 {
-												 \ecrire{n}
-										 }
-				 }
- \end{algorithme}
+										{
+												\ecrire{n}
+										}
+				}
+\end{algorithme}
 
- \end{lstlisting}
+\end{lstlisting}
 
- \begin{algorithme}
-				 \algo 
-				 {\small}
-				 {Afficher les nombres de 1 à 100}
-				 {}
-				 {n : \naturel}
-				 {}
-				 {}
-				 {}
-				 {
+\begin{algorithme}
+				\algo 
+				{\small}
+				{Afficher les nombres de 1 à 100}
+				{}
+				{n : \naturel}
+				{}
+				{}
+				{}
+				{
 								\pour{n}{1}{100}{}
-										 {
-												 \ecrire{n}
-										 }
-				 }
- \end{algorithme}
+										{
+												\ecrire{n}
+										}
+				}
+\end{algorithme}
 
- \subsubsection{indetérministes}
-		 \begin{lstlisting}
-				 \tantque{1}{2}
+\subsubsection{indetérministes}
+		\begin{lstlisting}
+				\tantque{1}{2}
 (1):Test de la boucle
 (2):Corps de la boucle
-		 \end{lstlisting}
+		\end{lstlisting}
 
 Exemple:
 \begin{lstlisting}
@@ -520,10 +520,10 @@ Exemple:
 						\ecrire{Afficher les nombres de 1 à ?}
 						\lire {bornesup}
 						\tantque{n$<$bornesup+1}
-								 {
-										 \ecrire{n}
-										 \affecter {n}{n+1}
-								 }
+								{
+										\ecrire{n}
+										\affecter {n}{n+1}
+								}
 				}
 		\end{algorithme}
 \end{lstlisting}
@@ -542,10 +542,10 @@ Exemple:
 						\ecrire{Afficher les nombres de 1 à ?}
 						\lire {bornesup}
 						\tantque{n $<$ bornesup+1}
-								 {
-										 \ecrire{n}
-										 \affecter {n}{n+1}
-								 }
+								{
+										\ecrire{n}
+										\affecter {n}{n+1}
+								}
 				}
 		\end{algorithme}
 
@@ -560,43 +560,43 @@ La commande \texttt{\textbackslash repeter} permet d'effectuer une boucle en exé
 		\end{lstlisting}
 Exemple:
 		\begin{lstlisting}
- \begin{algorithme}
-		 \algo 
-		 {\small}
-		 {Entrer un nombre entre 1 et 5}
-		 {}
-		 {}
-		 {}
-		 {reponse : \naturel}
-		 {}
-		 {
-				 \affecter{reponse}{0}
-				 \repeter {
-						 \ecrire {Entrez un nombre entre 1 et 5}
-						 \lire {reponse}
+\begin{algorithme}
+		\algo 
+		{\small}
+		{Entrer un nombre entre 1 et 5}
+		{}
+		{}
+		{}
+		{reponse : \naturel}
+		{}
+		{
+				\affecter{reponse}{0}
+				\repeter {
+						\ecrire {Entrez un nombre entre 1 et 5}
+						\lire {reponse}
 								}
-						 {(reponse $<$ 1)}
-		 }
- \end{algorithme}
+						{(reponse $<$ 1)}
+		}
+\end{algorithme}
 \end{lstlisting}
 
- \begin{algorithme}
-		 \algo 
-		 {\small}
-		 {Entrer un nombre entre 1 et 5}
-		 {}
-		 {}
-		 {}
-		 {reponse : \naturel}
-		 {}
-		 { \affecter{reponse}{0}
-				 \repeter {
-						 \ecrire {Entrez un nombre entre 1 et 5}
-						 \lire {reponse}
+\begin{algorithme}
+		\algo 
+		{\small}
+		{Entrer un nombre entre 1 et 5}
+		{}
+		{}
+		{}
+		{reponse : \naturel}
+		{}
+		{ \affecter{reponse}{0}
+				\repeter {
+						\ecrire {Entrez un nombre entre 1 et 5}
+						\lire {reponse}
 								}
-						 {(reponse $<$ 1)}
-		 }
- \end{algorithme}
+						{(reponse $<$ 1)}
+		}
+\end{algorithme}
 
 \subsection{Les fonctions et les procédures}
 
@@ -955,7 +955,6 @@ La syntaxe est la suivante:
 
 \section{L'environment TAD}
 
-
 On a aussi la possibilité de définir des types abstraits de données
 (que l'on retrouve dans la littérature sous les termes ``types de données
 abstraits'' ou ``abstract datatype'').
@@ -1022,12 +1021,12 @@ Comme illustré dans le Listing , on encadre la définition d'un type abstrait de 
 
 
  (3) : Le produit cartésien des types en entrée : il faut alors utiliser une des commandes suivantes :
-						\begin{itemize}
-								\item \texttt{\textbackslash tadUnParam} qui admet un argument en paramètre
-						 \item \texttt{\textbackslash tadDeuxParams} qui admet deux arguments en paramètre
-								\item \texttt{\textbackslash tadTroisParams} qui admet trois arguments en paramètre
-								\item etc. la limite étant à		\texttt{\textbackslash tadHuitParams}
-						\end{itemize}
+		\begin{itemize}
+			\item \texttt{\textbackslash tadUnParam} qui admet un argument en paramètre
+			\item \texttt{\textbackslash tadDeuxParams} qui admet deux arguments en paramètre
+			\item \texttt{\textbackslash tadTroisParams} qui admet trois arguments en paramètre
+			\item etc. la limite étant à		\texttt{\textbackslash tadHuitParams}
+		\end{itemize}
 
  (4) : Le produit cartésien des types en sortie, qui s'utilise de la même manière que le produit cartésien des types en entrée
 
