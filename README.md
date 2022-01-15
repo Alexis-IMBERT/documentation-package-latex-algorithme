@@ -20,3 +20,4 @@ Historique de la documentation :
 	* elimination des accents dans les mots lies a algorithme  
 	* ajout de la documentation pour la commande \commentaire  
 	* ajout de la documentation pour l'environnement tadPreconditions et de la commande associé \tadPrecondition
+	* ajout de la commande tadOperationAvecPreconditions
