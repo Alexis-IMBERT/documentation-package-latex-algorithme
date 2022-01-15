@@ -21,3 +21,4 @@ Historique de la documentation :
 	* ajout de la documentation pour la commande \commentaire  
 	* ajout de la documentation pour l'environnement tadPreconditions et de la commande associé \tadPrecondition
 	* ajout de la commande tadOperationAvecPreconditions
+	* ajout des types fonctions et procédures avec et sans préconditions
