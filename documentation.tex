@@ -9,6 +9,8 @@
 \usepackage{color}
 \usepackage{supertabular}
 \usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
 
 
 
@@ -1164,6 +1166,40 @@ Ce qui donne :
 				\remarque{Une procédure ne renvoie pas de valeur}
 
 		}
+\end{algorithme}
+
+\subsection{La commande commentaire}
+La commande \texttt{\textbackslash commentaire} sert à mettre ( donc ) des commentaires dans l'algorihme.
+
+\begin{lstlisting}
+	\begin{algorithme}
+		\small
+		\procedure
+		{echanger}
+		{\paramEntreeSortie{val1,val2 : \entier}}
+		{temp : \entier}
+		{\affecter{temp}{val1}
+				\affecter {val1}{val2}
+				\affecter {val2}{temp}
+				\remarque{Une procédure ne renvoie pas de valeur }
+				\commentaire{Encore une fois procédure ne renvoie pas de valeur}
+		}
+	\end{algorithme}
+\end{lstlisting}
+
+Ce qui donne :
+\begin{algorithme}
+	\small
+	\procedure
+	{echanger}
+	{\paramEntreeSortie{val1,val2 : \entier}}
+	{temp : \entier}
+	{\affecter{temp}{val1}
+			\affecter {val1}{val2}
+			\affecter {val2}{temp}
+			\remarque{Une procédure ne renvoie pas de valeur }
+			\commentaire{Encore une fois procédure ne renvoie pas de valeur}
+	}
 \end{algorithme}
 
 \end{document}
