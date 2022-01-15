@@ -11,8 +11,10 @@
 \usepackage{fullpage}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
+\usepackage{enumitem}
 
-
+%% configuration des listes
+\setitemize[2]{label=\textbullet}
 
 %%Configuration de listings -----------------------------------
 \definecolor{colKeys}{rgb}{0,0,1}
@@ -74,53 +76,70 @@ Voici l'historique des changements du package depuis sa sortie :
 \begin{itemize}
 %% Envoyer toutes remarques a Nicolas.Delestre@insa-rouen.fr
 
-		\item Modifications de puis la version 2.6\\
-				\textbullet		 Amélioration de la notation des pointeurs
+		\item Modifications de puis la version 2.6
+			\begin{itemize}
+				\item Amélioration de la notation des pointeurs
+			\end{itemize}
 
-		\item Modifications depuis la version 2.4\\
-				\textbullet		 Ajoute des commandes \textbackslash typeProcedure, \textbackslash typeFonction, \textbackslash typeProcedureAvecPreconditions, \textbackslash typeFonctionAvecPreconditions
+		\item Modifications depuis la version 2.4
+			\begin{itemize}
+				\item Ajoute des commandes \textbackslash typeProcedure, \textbackslash typeFonction, \textbackslash typeProcedureAvecPreconditions, \textbackslash typeFonctionAvecPreconditions
+			\end{itemize}
 
-		\item Modifications depuis la version 2.3.8\\
-				\textbullet		 Ajout de la commande \textbackslash tadOperationAvecPreconditions\\
-				\textbullet		 Ajout des environnement tadPreconditions et des commandes \textbackslash motclefTADPreconditions		et \textbackslash tadPrecondition\\
-				\textbullet		 Ajout de la commande \textbackslash champ
+		\item Modifications depuis la version 2.3.8
+			\begin{itemize}
+				\item Ajout de la commande \textbackslash tadOperationAvecPreconditions
+				\item Ajout des environnement tadPreconditions et des commandes \textbackslash motclefTADPreconditions		et \textbackslash tadPrecondition
+				\item Ajout de la commande \textbackslash champ
+			\end{itemize}
 
 
-		\item Modifications depuis la version 2.3.7\\
-				\textbullet		 Ajout des types de base naturelNonNul, reelPositif, reelPositifNonNul (resp Negatif)\\
-				\textbullet		 Elimination d'accents dans les mots cles lies à l'algorithmique\\
-				\textbullet		 ajout de la commande \textbackslash commentaire
+		\item Modifications depuis la version 2.3.7
+			\begin{itemize}
+				\item Ajout des types de base naturelNonNul, reelPositif, reelPositifNonNul (resp Negatif)
+				\item Elimination d'accents dans les mots cles lies à l'algorithmique
+				\item Ajout de la commande \textbackslash commentaire
+			\end{itemize}
 				
-		\item Modification depuis la version 2.3.6 :\\
-				\textbullet		 Ajout des commandes \textbackslash fonctionAvecPreconditions \textbackslash signatureFonctionAvecPreconditions, \textbackslash procedureAvecPreconditions et \textbackslash signatureProcedureAvecPreconditions\\
-				\textbullet		 remplacement de structure et champEnregistrement par enregistrement et champEnregistrement\\
-
-		\item		Modification depuis la version 2.3.5 :\\
-		 \textbullet		 suppression de la commande \textbackslash programme
+		\item Modification depuis la version 2.3.6
+			\begin{itemize}
+				\item Ajout des commandes \textbackslash fonctionAvecPreconditions \textbackslash signatureFonctionAvecPreconditions, \textbackslash procedureAvecPreconditions et \textbackslash signatureProcedureAvecPreconditions
+				\item Remplacement de structure et champEnregistrement par enregistrement et champEnregistrement
+			\end{itemize}
+			
+		\item Modification depuis la version 2.3.5
+			\begin{itemize}
+				\item suppression de la commande \textbackslash programme
+			\end{itemize}
 		
-		\item Modification depuis la version 2.3.4 :\\
-		 \textbullet		 Dans les commandes fonction et procedure, modification du test pour savoir si les variables locales sont presentes ou pas\\
-		 \textbullet		 Suppression de l'erreur de compilation du a la redefinition de l'environnement structure\\
+		\item Modification depuis la version 2.3.4
+			\begin{itemize}
+				\item Dans les commandes fonction et procedure, modification du test pour savoir si les variables locales sont presentes ou pas
+				\item Suppression de l'erreur de compilation du a la redefinition de l'environnement structure
+			\end{itemize}
 
-		\item		Modification depuis la version 2.3.2 :\\
-		 \textbullet structure est maintenant un environnement qui s'integre dans l'environnement algorithme\\
-		 \textbullet \textbackslash champEnregistrement a pris une majuscule\\
-		 \textbullet Apparition de \texttt{\textbackslash tadSemantiquesAxiomatiques}\\
-		 \textbullet		 Apparition de l'environnement \texttt{\textbackslash tadAxiomes} et commande \texttt{\textbackslash tadAxiome}\\
-		 \textbullet		 Apparition de \texttt{\textbackslash typePointeur}, \texttt{\textbackslash pointeur},\texttt{\textbackslash \pointeurNULL}, \texttt{\textbackslash champPointeur}, \texttt{\textbackslash allouer}, \texttt{\textbackslash desallouer}\\
-		 \textbullet		 Elimination de l'erreur de compilation lié à la définition de la commande \texttt{\textbackslash structure}
+		\item Modification depuis la version 2.3.2
+			\begin{itemize}
+				\item structure est maintenant un environnement qui s'integre dans l'environnement algorithme
+				\item \textbackslash champEnregistrement a pris une majuscule
+				\item Apparition de \texttt{\textbackslash tadSemantiquesAxiomatiques}
+				\item Apparition de l'environnement \texttt{\textbackslash tadAxiomes} et commande \texttt{\textbackslash tadAxiome}
+				\item Apparition de \texttt{\textbackslash typePointeur}, \texttt{\textbackslash pointeur},\texttt{\textbackslash \pointeurNULL}, \texttt{\textbackslash champPointeur}, \texttt{\textbackslash allouer}, \texttt{\textbackslash desallouer}
+				\item Elimination de l'erreur de compilation lié à la définition de la commande \texttt{\textbackslash structure}
+			\end{itemize}
+		
 \end{itemize}
 
 \section{Installation}
 
 Il y trois manières d'installer le Package \textbf{algorithme.sty} : 
 \begin{enumerate}
-		\item Il suffit de mettre le package dans le même dossier que le document lui-même.
+	\item Il suffit de mettre le package dans le même dossier que le document lui-même.
 L' inconvénient de cette méthode est qu'il faut toujours recopier le package \textbf{algorithme.sty} à chaque fois que l'on fait un nouveau document dans un autre dossier.
 
- \item La deuxième méthode consiste à chercher le dossier \textbf{texmf} dans le system, puis de copier le package \textbf{algorithme.sty} dans le dossier \textbf{tex} ( Normalement, ce dossier devrait se trouver dans \texttt{/usr/share/texmf/tex/} ) .Mais cette méthode reste dangereuse par le fait qu'il faut être root pour le faire. 
+	\item La deuxième méthode consiste à chercher le dossier \textbf{texmf} dans le system, puis de copier le package \textbf{algorithme.sty} dans le dossier \textbf{tex} ( Normalement, ce dossier devrait se trouver dans \texttt{/usr/share/texmf/tex/} ) .Mais cette méthode reste dangereuse par le fait qu'il faut être root pour le faire. 
 
- \item La dernière méthode, qui est la méthode plus propre,		permet d'installer une fois pour toute le package sur la machine peut importe l'emplacement des documents sources \LaTeX.Il suffit de paramétrer le variable d'environment \textbf{HOMETEXMF}, en lui donnant comme valeur le réperoire où se trouve ses propres packages \LaTeX .
+	\item La dernière méthode, qui est la méthode plus propre,		permet d'installer une fois pour toute le package sur la machine peut importe l'emplacement des documents sources \LaTeX.Il suffit de paramétrer le variable d'environment \textbf{HOMETEXMF}, en lui donnant comme valeur le réperoire où se trouve ses propres packages \LaTeX .
 
 \end{enumerate}
 
