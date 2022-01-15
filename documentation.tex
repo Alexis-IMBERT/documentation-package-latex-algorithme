@@ -258,7 +258,7 @@ Exemple:
 
 Les commandes pour utiliser les types complexes sont les suivantes:
 \begin{lstlisting}
-		constante: \constante{1}{2}
+constante: \constante{1}{2}
 (1): Nom de la constante
 (2): Valeur de la constante
 
@@ -281,7 +281,6 @@ Exemples:
 		{\normalsize}
 		{Exemple de programme}
 		{}
-		
 		{
 		const: \constante{const}{2},
 		tab1d: \tableauUneDimension{10}{d'}{\entier},
@@ -295,22 +294,76 @@ Exemples:
 \end{lstlisting}
 
 \begin{algorithme}
-		\algo
-		{\normalsize}
-		{Exemple de programme}
-		{}
-		{
-		const: \constante{const}{2},
-		tab1d: \tableauUneDimension{10}{d'}{\entier},
-		tab2d: \tableauDeuxDimensions{10}{20}{de}{\reel}
-		}
-		{}
-		{}
-		{}
-		{\instruction{}}
+	\algo
+	{\normalsize}
+	{Exemple de programme}
+	{}
+	{
+	const: \constante{const}{2},
+	tab1d: \tableauUneDimension{10}{d'}{\entier},
+	tab2d: \tableauDeuxDimensions{10}{20}{de}{\reel}
+	}
+	{}
+	{}
+	{}
+	{\instruction{}}
 \end{algorithme}
 
+\subsection{Les types fonctions et procedures}
+Les commandes pour les types de fonction et procédures sont les suivantes :
+\begin{lstlisting}
+type fonction : \typeFonction{1}{2}
+(1): Les paramètres
+(2): Le type de retour
 
+type fonction avec preconditions : \typeFonctionAvecPreconditions{1}{2}{3}
+(1): Les paramètres
+(2): Le type de retour
+(3): Les préconditions
+
+type procédure : \typeProcedure{1}
+(1): Les paramètres
+
+type procédure : \typeProcedureAvecPreconditions{1}{2}
+(1): Les paramètres
+(2): Les préconditions
+\end{lstlisting}
+
+Exemples :
+\begin{lstlisting}
+	\algo
+	{\normalsize}
+	{Exemple de programme}
+	{}
+	{
+		\typeFonction{\reel , \reel}{\booleen},\\
+		\typeFonctionAvecPreconditions{a : \reel}{\reel}{a div 2 = 0},\\
+		\typeProcedure{\paramEntreeSortie{a : \reel}},\\
+		\typeProcedureAvecPreconditions{\paramEntreeSortie{a : \reel}}{a div 2 = 0},\\
+	}
+	{}
+	{}
+	{}
+	{\instruction{}}
+\end{lstlisting}
+
+Ce qui donne :
+\begin{algorithme}
+	\algo
+	{\normalsize}
+	{Exemple de programme}
+	{}
+	{
+		\typeFonction{\reel , \reel}{\booleen},\\
+		\typeFonctionAvecPreconditions{a : \reel}{\reel}{a div 2 = 0},\\
+		\typeProcedure{\paramEntreeSortie{a : \reel}},\\
+		\typeProcedureAvecPreconditions{\paramEntreeSortie{a : \reel}}{a div 2 = 0},\\
+	}
+	{}
+	{}
+	{}
+	{\instruction{}}
+\end{algorithme}
 
 \subsection{Les instructions élémentaires}
 Les instructions élémentaires sont l'affectation, la lecture et l'écriture de données, les commandes nécessaires pour les utiliser sont les suivantes:
