@@ -960,20 +960,25 @@ On a aussi la possibilité de définir des types abstraits de données
 abstraits'' ou ``abstract datatype'').
 
 \begin{lstlisting}
-		\begin{tad}
+	\begin{tad}
 		\tadNom{Dictionnaire}
 		\tadParametres{Element,Clef}
 		\tadDependances{\booleen}
 		\begin{tadOperations}{Dictionnaire}
-				\tadOperation{dictionnaire}{}{\tadUnParam{Dictionnaire}}
+			\tadOperation{dictionnaire}{}{\tadUnParam{Dictionnaire}}
+			\tadOperation{estPresent}{\tadUnParam{Dictionnaire}}{\tadUnParam{\booleen}}
+			\tadOperationAvecPreconditions{retirer}{\tadDeuxParams{Dictionnire}{Clef}}{\tadUnParam{Element}}
 		\end{tadOperations}
+		\begin{tadPreconditions}{Dictionnaire}
+			\tadPrecondition{retirer}{estPresent(dictionnaire,mot)}
+		\end{tadPreconditions}
 		\begin{tadSemantiques}{Dictionnaire}
 				\tadSemantique{ajouter}{L'opération qui permet d'ajouter un élément dans le Dictionnaire}
 		\end{tadSemantiques}
 		\begin{tadAxiomes}
 				\tadAxiome{dictionnaire()}
 		\end{tadAxiomes}
-\end{tad}
+	\end{tad}
 \end{lstlisting}
 
 
@@ -1030,31 +1035,49 @@ Comme illustré dans le Listing , on encadre la définition d'un type abstrait de 
 
  (4) : Le produit cartésien des types en sortie, qui s'utilise de la même manière que le produit cartésien des types en entrée
 
-		\item
-				\begin{lstlisting}
-								\begin{tadSemantiques}{1}
-										\tadSemantique{2}{3}
-								\end{tadSemantiques}
-				\end{lstlisting}
-		L'environnement \texttt{tadSemantiques} qui permet de lister, à l'aide de la commande \texttt{\textbackslash tadSemantique}, la signification des opérations de ce TAD. 
+ \item 
+\begin{lstlisting}
+	\begin{tadPreconditions}{1}
+		\tadPrecondition{2}{3}
+	\end{tadPreconditions}
+\end{lstlisting}
+L'environnement \texttt{tadPreconditions} permet de lister les éventuelles préconditions de la commande \texttt{\textbackslash tadPrecondition}
+
+ (1) : Nom de l'opération qui a le plus de caractères. 
 
 
- (1) : Nom de l'opération qui a le		plus de caractères. 
+ (2) : Nom de l'opération
 
 
- (2) : le nom de l'opération
+ (3) : La précondition de l'opération
 
 
- (3) : sa signification
-		
 
-		\item
-				\begin{lstlisting}
-								\begin{tadAxiomes}
-										\tadAxiome{1}
-								\end{tadAxiomes}
-				\end{lstlisting}
-		L'environnement \texttt{tadAxiomes} qui permet de lister, à l'aide de la commande \texttt{\textbackslash tadAxiome}, les axiomes du TAD.
+\item
+	\begin{lstlisting}
+					\begin{tadSemantiques}{1}
+							\tadSemantique{2}{3}
+					\end{tadSemantiques}
+	\end{lstlisting}
+	L'environnement \texttt{tadSemantiques} qui permet de lister, à l'aide de la commande \texttt{\textbackslash tadSemantique}, la signification des opérations de ce TAD. 
+
+
+ (1) : Nom de l'opération qui a le plus de caractères. 
+
+
+ (2) : Nom de l'opération
+
+
+ (3) : Sa signification
+
+
+\item
+	\begin{lstlisting}
+					\begin{tadAxiomes}
+							\tadAxiome{1}
+					\end{tadAxiomes}
+	\end{lstlisting}
+L'environnement \texttt{tadAxiomes} qui permet de lister, à l'aide de la commande \texttt{\textbackslash tadAxiome}, les axiomes du TAD.
 
  (1) : Axiome 
 
@@ -1064,16 +1087,19 @@ Comme illustré dans le Listing , on encadre la définition d'un type abstrait de 
 Voici un exemple assez complet qui illustre toutes ces commandes.
 
 \begin{lstlisting}
-		
-\begin{tad}
+	\begin{tad}
 		\tadNom{Dictionnaire}
 		\tadParametres{Element,Clef}
 		\tadDependances{\booleen}
 		\begin{tadOperations}{Dictionnaire}
-				\tadOperation{dictionnaire}{}{\tadUnParam{Dictionnaire}}
-				\tadOperation{ajouter}{\tadTroisParams{Dictionnaire}{Clef}{Element}}{\tadUnParam{Dictionnaire}}
-				\tadOperation{retirer}{\tadDeuxParams{Dictionnire}{Clef}}{\tadUnParam{Element}}
+			\tadOperation{dictionnaire}{}{\tadUnParam{Dictionnaire}}
+			\tadOperation{estPresent}{\tadUnParam{Dictionnaire}}{\tadUnParam{\booleen}}
+			\tadOperation{ajouter}{\tadTroisParams{Dictionnaire}{Clef}{Element}}{\tadUnParam{Dictionnaire}}
+			\tadOperationAvecPreconditions{retirer}{\tadDeuxParams{Dictionnire}{Clef}}{\tadUnParam{Element}}
 		\end{tadOperations}
+		\begin{tadPreconditions}{Dictionnaire}
+			\tadPrecondition{retirer}{estPresent(dictionnaire,clef)}
+		\end{tadPreconditions}
 		\begin{tadSemantiques}{Dictionnaire}
 				\tadSemantique{dictionnaire}{l'opération qui permet de construire un Dictionnaire
 						à partir de sa partie réelle et imaginaire}
@@ -1096,10 +1122,14 @@ Ce qui donne :
 		\tadParametres{Element,Clef}
 		\tadDependances{\booleen}
 		\begin{tadOperations}{Dictionnaire}
-				\tadOperation{dictionnaire}{}{\tadUnParam{Dictionnaire}}
-				\tadOperation{ajouter}{\tadTroisParams{Dictionnaire}{Clef}{Element}}{\tadUnParam{Dictionnaire}}
-				\tadOperation{retirer}{\tadDeuxParams{Dictionnire}{Clef}}{\tadUnParam{Element}}
+			\tadOperation{dictionnaire}{}{\tadUnParam{Dictionnaire}}
+			\tadOperation{estPresent}{\tadUnParam{Dictionnaire}}{\tadUnParam{\booleen}}
+			\tadOperation{ajouter}{\tadTroisParams{Dictionnaire}{Clef}{Element}}{\tadUnParam{Dictionnaire}}
+			\tadOperationAvecPreconditions{retirer}{\tadDeuxParams{Dictionnire}{Clef}}{\tadUnParam{Element}}
 		\end{tadOperations}
+		\begin{tadPreconditions}{Dictionnaire}
+			\tadPrecondition{retirer}{estPresent(dictionnaire,clef)}
+		\end{tadPreconditions}
 		\begin{tadSemantiques}{Dictionnaire}
 				\tadSemantique{dictionnaire}{l'opération qui permet de construire un Dictionnaire
 						à partir de sa partie réelle et imaginaire}
