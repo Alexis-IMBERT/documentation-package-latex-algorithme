@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt]{report}
 \usepackage{algorithme}
-\usepackage[francais]{babel}
+\usepackage[french]{babel}
 \usepackage[latin1]{inputenc}
 \usepackage{graphicx}
 \usepackage{url}
@@ -920,7 +920,7 @@ La syntaxe est la suivante:
 \begin{enregistrement}{date}
 								\champEnregistrement{leJour}{\entier}
 								\champEnregistrement{leMois}{\entier}
-						 \champEnregistrement{lAnnee}{\entier}
+								\champEnregistrement{lAnnee}{\entier}
 \end{enregistrement}
 \end{algorithme}
 \end{lstlisting}
@@ -928,7 +928,7 @@ La syntaxe est la suivante:
 \begin{enregistrement}{date}
 								\champEnregistrement{leJour}{\entier}
 								\champEnregistrement{leMois}{\entier}
-						 \champEnregistrement{lAnnee}{\entier}
+								\champEnregistrement{lAnnee}{\entier}
 \end{enregistrement}
 \end{algorithme}
 
@@ -964,7 +964,7 @@ Comme illustré dans le Listing , on encadre la définition d'un type abstrait de 
 \begin{itemize}
 \item
 		\begin{lstlisting}
-				 \tadNom{1}		
+			\tadNom{1}		
 		\end{lstlisting}
 		La commande \texttt{\textbackslash tadNom} qui permet de fixer le nom du TAD.
 
@@ -972,8 +972,8 @@ Comme illustré dans le Listing , on encadre la définition d'un type abstrait de 
 (1): Nom du tad 
 
 \item
-		 \begin{lstlisting}
-				 \tadParametres{1}
+		\begin{lstlisting}
+			\tadParametres{1}
 		\end{lstlisting}
 		La commande \texttt{\textbackslash tadParametres} qui permet de fixer le paramètre de ce TAD.
 
@@ -1015,10 +1015,10 @@ Comme illustré dans le Listing , on encadre la définition d'un type abstrait de 
 		\item
 				\begin{lstlisting}
 								\begin{tadSemantiques}{1}
-										 \tadSemantique{2}{3}
+										\tadSemantique{2}{3}
 								\end{tadSemantiques}
 				\end{lstlisting}
-		 L'environnement \texttt{tadSemantiques} qui permet de lister, à l'aide de la commande \texttt{\textbackslash tadSemantique}, la signification des opérations de ce TAD. 
+		L'environnement \texttt{tadSemantiques} qui permet de lister, à l'aide de la commande \texttt{\textbackslash tadSemantique}, la signification des opérations de ce TAD. 
 
 
  (1) : Nom de l'opération qui a le		plus de caractères. 
@@ -1033,10 +1033,10 @@ Comme illustré dans le Listing , on encadre la définition d'un type abstrait de 
 		\item
 				\begin{lstlisting}
 								\begin{tadAxiomes}
-										 \tadAxiome{1}
+										\tadAxiome{1}
 								\end{tadAxiomes}
 				\end{lstlisting}
-		 L'environnement \texttt{tadAxiomes} qui permet de lister, à l'aide de la commande \texttt{\textbackslash tadAxiome}, les axiomes du TAD. 
+		L'environnement \texttt{tadAxiomes} qui permet de lister, à l'aide de la commande \texttt{\textbackslash tadAxiome}, les axiomes du TAD.
 
  (1) : Axiome 
 
@@ -1164,7 +1164,6 @@ Ce qui donne :
 				\affecter {val1}{val2}
 				\affecter {val2}{temp}
 				\remarque{Une procédure ne renvoie pas de valeur}
-
 		}
 \end{algorithme}
 
